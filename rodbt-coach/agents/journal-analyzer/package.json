@@ -1,0 +1,20 @@
+{
+  "name": "journal-analyzer-agent",
+  "version": "1.0.0",
+  "description": "Autonomous agent for analyzing journal entries to identify emotional patterns and generate edge questions",
+  "type": "module",
+  "main": "agent.ts",
+  "scripts": {
+    "start": "tsx agent.ts",
+    "dev": "tsx watch agent.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "version": "1.0.0",
+  "description": "Domain routing rules for holistic-life-coach orchestrator",
+  "last_updated": "2025-11-27",
+  "domains": {
+    "career": {
+      "specialist_skill": "job-search-specialist",
+      "priority": "high",
+      "keywords": [
+        "job", "interview", "resume", "application", "career", "offer",
+        "company research", "networking", "salary", "portfolio",
+        "job search", "recruiter", "hiring", "interviewing",
+        "professional development", "work", "employment",
+        "never search alone", "star stories", "behavioral interview"
+      ],
+      "patterns": [
+        "prepare for interview",
+        "research company",
+        "send application",
+        "negotiate offer",
+        "update resume",
+        "practice interview",
+        "job outreach",
+        "professional network"
+      ],
+      "tracking_systems": [
+        "job-search-pipeline",
+        "outreach-streak",
+        "Things 3 (job search tasks)",
+        "Gmail (recruiting emails)"
+      ]
+    },
+    "emotional_health": {
+      "specialist_skill": "rodbt-coach",
+      "priority": "high",
+      "keywords": [
+        "rodbt", "ro-dbt", "overcontrol", "edge question", "self-enquiry",
+        "withdrawal", "perfectionism", "avoidance", "vulnerability",
+        "self-disclosure", "emotional", "feelings", "therapy",
+        "pattern", "rigid thinking", "compulsive envy", "inhibition",
+        "openness", "flexibility", "social connectedness",
+        "journal analysis", "progress tracking"
+      ],
+      "patterns": [
+        "withdrawing when hurt",
+        "avoiding difficult conversations",
+        "perfectionism blocking action",
+        "strategic avoidance",
+        "low self-disclosure",
+        "emotional inhibition",
+        "rigid thinking",
+        "detail-focused processing"
+      ],
+      "tracking_systems": [
+        "rodbt-progress.json",
+        "journal entries (Obsidian)",
+        "therapy session notes"
+      ]
+    },
+    "relationships": {
+      "specialist_skill": "rodbt-coach",
+      "overlaps_with": ["emotional_health"],
+      "priority": "medium",
+      "keywords": [
+        "carter", "relationship", "partner", "boyfriend", "date night",
+        "flowers", "ritual", "communication", "conflict", "intimacy",
+        "vulnerability", "friends", "denver social", "local connections",
+        "loneliness", "friendship", "social anxiety"
+      ],
+      "patterns": [
+        "withdrawal with carter",
+        "low self-disclosure in relationship",
+        "zero denver friends",
+        "social anxiety",
+        "vulnerability practice"
+      ],
+      "tracking_systems": [
+        "carter-rituals",
+        "denver-connect",
+        "rodbt-progress.json"
+      ]
+    },
+    "fitness": {
+      "specialist_skill": null,
+      "handled_by": "holistic-life-coach",
+      "priority": "medium",
+      "keywords": [
+        "marathon", "running", "training", "strava", "race", "pace",
+        "workout", "fitness", "strength", "recovery", "injury",
+        "running group", "exercise", "athletic", "performance"
+      ],
+      "patterns": [
+        "marathon training consistency",
+        "perfectionism about workouts",
+        "rigid training plans",
+        "not using fitness for social connection"
+      ],
+      "tracking_systems": [
+        "Strava",
+        "Training plan",
+        "Things 3 (workout tasks)"
+      ],
+      "integration_opportunities": [
+        "denver_running_groups_for_social_connection",
+        "post_run_clarity_for_job_applications",
+        "physical_training_discipline_transfers"
+      ]
+    },
+    "personal_development": {
+      "specialist_skill": null,
+      "handled_by": "holistic-life-coach",
+      "priority": "low",
+      "keywords": [
+        "learning", "skill", "upskilling", "course", "reading",
+        "growth", "development", "mastery", "practice", "study",
+        "skill creator", "agent sdk", "technical learning"
+      ],
+      "patterns": [
+        "strategic avoidance via elaborate systems",
+        "analysis paralysis",
+        "perfectionism in learning",
+        "architect-systems-avoid-needle-movers"
+      ],
+      "tracking_systems": [
+        "Things 3 (learning tasks)",
+        "Obsidian (learning notes)",
+        "Project repos"
+      ]
+    },
+    "financial": {
+      "specialist_skill": null,
+      "handled_by": "holistic-life-coach",
+      "priority": "medium",
+      "keywords": [
+        "budget", "money", "financial", "savings", "expenses",
+        "runway", "insurance", "tax", "investment", "paycheck"
+      ],
+      "patterns": [
+        "job search runway concerns",
+        "financial stress affecting decisions"
+      ],
+      "tracking_systems": [
+        "Budget spreadsheet",
+        "Things 3 (financial tasks)"
+      ]
+    },
+    "life_infrastructure": {
+      "specialist_skill": "executive-assistant",
+      "priority": "low",
+      "keywords": [
+        "calendar", "schedule", "planning", "tasks", "email",
+        "organizing", "logistics", "administrative", "things 3",
+        "linear", "project management"
+      ],
+      "patterns": [
+        "over-planning to avoid action",
+        "systems creation as avoidance",
+        "perfectionism in organization"
+      ],
+      "tracking_systems": [
+        "Things 3",
+        "Google Calendar",
+        "Linear",
+        "Gmail"
+      ]
+    }
+  },
+  "cross_domain_patterns": {
+    "strategic_avoidance": {
+      "manifests_in": ["career", "emotional_health", "relationships", "personal_development"],
+      "signals": [
+        "elaborate system creation",
+        "perfectionism blocking action",
+        "research over execution",
+        "optimization instead of implementation"
+      ],
+      "intervention": "Small brave steps, time-boxed action, edge question practice"
+    },
+    "perfectionism": {
+      "manifests_in": ["career", "fitness", "personal_development", "relationships"],
+      "signals": [
+        "over-preparation",
+        "delaying until 'perfect'",
+        "frustration with imperfection",
+        "high standards blocking action"
+      ],
+      "intervention": "Practice 'good enough' threshold, celebrate imperfect action, flexible mind practice"
+    },
+    "withdrawal_when_hurt": {
+      "manifests_in": ["relationships", "career", "emotional_health"],
+      "signals": [
+        "going silent after hurt feelings",
+        "disengaging after rejection",
+        "creating distance to protect",
+        "isolating instead of reaching out"
+      ],
+      "intervention": "Opposite action, self-disclosure practice, 'I' statements, staying engaged"
+    },
+    "low_self_disclosure": {
+      "manifests_in": ["relationships", "career", "emotional_health"],
+      "signals": [
+        "keeping feelings private",
+        "curated self-presentation",
+        "minimizing vulnerability",
+        "sharing only 'acceptable' parts"
+      ],
+      "intervention": "Graduated vulnerability, internal state sharing, asking for support"
+    },
+    "detail_focused_processing": {
+      "manifests_in": ["career", "personal_development", "life_infrastructure"],
+      "signals": [
+        "lost in details, missing big picture",
+        "over-planning and over-preparing",
+        "analysis paralysis",
+        "gathering more data to delay decision"
+      ],
+      "intervention": "Big picture practice, time-boxed decisions, trust intuition"
+    }
+  },
+  "routing_rules": {
+    "single_domain": {
+      "threshold": "3+ keywords from single domain",
+      "action": "delegate_to_specialist"
+    },
+    "multi_domain": {
+      "threshold": "2+ keywords from 2+ domains",
+      "action": "run_integration_engine"
+    },
+    "conflicting_priorities": {
+      "signals": [
+        "should I focus on X or Y",
+        "don't have time for both",
+        "competing priorities",
+        "resource allocation"
+      ],
+      "action": "run_integration_engine --mode=priority"
+    },
+    "pattern_spanning": {
+      "signals": [
+        "same pattern in multiple areas",
+        "recurring issue",
+        "pattern recognition",
+        "cross-domain challenge"
+      ],
+      "action": "run_integration_engine --mode=patterns"
+    },
+    "synthesis_request": {
+      "signals": [
+        "how am I doing",
+        "overall progress",
+        "life review",
+        "weekly review",
+        "momentum check"
+      ],
+      "action": "run_integration_engine --mode=synthesis"
+    },
+    "opportunity_scan": {
+      "signals": [
+        "how can I leverage",
+        "integration opportunities",
+        "compound efforts",
+        "synergies"
+      ],
+      "action": "run_integration_engine --mode=opportunities"
+    }
+  },
+  "special_cases": {
+    "morning_kickstart": {
+      "triggers": ["morning kickstart", "morning routine", "start the day"],
+      "actions": [
+        "check_needle_mover",
+        "review_calendar",
+        "mode_tracking_check",
+        "quick_domain_scan"
+      ],
+      "delegate_to": "executive-assistant"
+    },
+    "weekly_review": {
+      "triggers": ["weekly review", "week in review", "how was this week"],
+      "actions": [
+        "run_integration_engine --mode=synthesis",
+        "celebrate_wins",
+        "identify_patterns",
+        "reset_priorities"
+      ],
+      "always_run_synthesis": true
+    },
+    "quarterly_reflection": {
+      "triggers": ["quarterly", "90 days", "quarter review"],
+      "actions": [
+        "comprehensive_momentum_analysis",
+        "values_alignment_check",
+        "major_pattern_identification",
+        "strategic_direction_setting"
+      ],
+      "delegate_to": "holistic-life-coach"
+    },
+    "denver_social": {
+      "triggers": ["denver friends", "local connections", "loneliness", "denver social"],
+      "delegate_to": "denver-connect",
+      "note": "Micro-action challenges for building Denver friendships"
+    },
+    "carter_relationship": {
+      "triggers": ["carter", "relationship ritual", "date night", "flowers"],
+      "delegate_to": "carter-rituals",
+      "note": "Relationship ritual tracking"
+    },
+    "daily_action": {
+      "triggers": ["today's priority", "needle mover", "one thing to focus on"],
+      "delegate_to": "needle-mover",
+      "note": "Daily high-impact action tracking"
+    }
+  },
+  "integration_opportunities": {
+    "denver_running_groups": {
+      "combines": ["fitness", "relationships"],
+      "description": "Join Denver running clubs for marathon training AND local friendship building",
+      "action_steps": [
+        "Research Denver running clubs",
+        "Attend one group run this week",
+        "Practice vulnerability: share you're new to Denver"
+      ]
+    },
+    "job_search_as_edge_practice": {
+      "combines": ["career", "emotional_health"],
+      "description": "Treat job applications as opportunities to practice overcontrol interventions",
+      "action_steps": [
+        "Frame applications as 'practice being imperfect'",
+        "Notice withdrawal urge after rejections",
+        "Log connection to rodbt-progress.json"
+      ]
+    },
+    "post_run_clarity": {
+      "combines": ["fitness", "career", "emotional_health"],
+      "description": "Leverage post-run mental state for difficult tasks",
+      "action_steps": [
+        "Schedule job applications post-morning run",
+        "Use post-run state for difficult conversations",
+        "Track: Does physical exhaustion reduce overthinking?"
+      ]
+    },
+    "relationship_vulnerability_to_interview_authenticity": {
+      "combines": ["relationships", "career", "emotional_health"],
+      "description": "Vulnerability practice with Carter builds capacity for authentic interview presence",
+      "action_steps": [
+        "Practice self-disclosure in relationship",
+        "Notice transfer to interview storytelling",
+        "Track connection in journal"
+      ]
+    }
+  },
+  "sam_specific_context": {
+    "current_phase": "in_transition",
+    "location": "Denver",
+    "relationship_status": "committed_partnership_with_carter",
+    "therapy_framework": "ro-dbt",
+    "primary_fitness_goal": "marathon_training",
+    "job_search_status": "active",
+    "active_rituals": {
+      "daily": ["needle-mover"],
+      "weekly": ["carter_date_night", "relationship_note", "job_outreach_10_per_week"],
+      "monthly": ["flowers_for_carter"]
+    },
+    "key_patterns_to_track": [
+      "strategic_avoidance",
+      "perfectionism",
+      "withdrawal_when_hurt",
+      "architect_systems_avoid_needle_movers"
+    ],
+    "tracking_systems": {
+      "tasks": "Things 3 (source of truth)",
+      "work": "Linear",
+      "fitness": "Strava",
+      "email": "Gmail",
+      "notes": "Obsidian",
+      "calendar": "Google Calendar"
+    },
+    "values": [
+      "meaningful_work_over_prestige",
+      "authentic_relationships_over_surface_networking",
+      "sustainable_pace_over_burnout",
+      "integration_over_compartmentalization"
+    ]
+  }
+}
